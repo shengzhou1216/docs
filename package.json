@@ -1,8 +1,8 @@
 {
-  "name": "site",
+  "name": "docs",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:shengzhou1216/site.git",
+  "repository": "git@github.com:shengzhou1216/docs.git",
   "author": "zhousheng <zhousheng1216@sina.com>",
   "license": "MIT",
   "devDependencies": {
