@@ -95,7 +95,7 @@ module.exports = {
                 {
                     title: 'Java基础',
                     children: [
-                        'variable'
+                        '2.data-type-and-operators'
                     ]
                 }
             ],
@@ -113,8 +113,16 @@ module.exports = {
      * plugin configuration
      */
     plugins: [
-    ]
+    ],
     /**
      * theme configuration
      */
+    /**
+     * markdown configuration
+     */
+    markdown: {
+        extendMarkdown: md => {
+            md.use(require("markdown-it-disable-url-encode"));
+          }
+    }
 }

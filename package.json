@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@vuepress/utils": "^2.0.0-alpha.1",
-    "flexsearch": "nextapps-de/flexsearch"
+    "flexsearch": "nextapps-de/flexsearch",
+    "markdown-it-disable-url-encode": "^1.0.1"
   }
 }
