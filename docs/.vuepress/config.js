@@ -1,5 +1,5 @@
 const { path } = require('@vuepress/utils')
-
+const java = require('../java')
 module.exports = {
     /**
      * github pages configuration
@@ -10,69 +10,77 @@ module.exports = {
      */
     lang: 'en-US',
     title: 'Hzml Code-Book',
-    description: '',
-
+    description: 'Hzml Code-Book',
+    head: [
+        ['link', { rel: 'icon', href: '/logo.png' }]
+    ],
     /**
      * theme configuration
      */
     themeConfig: {
+        searchPlaceholder: 'Search...',
+        lastUpdated: '最后一次更新于',
         logo: 'https://vuejs.org/images/logo.png',
+        searchMaxSuggestions: 10,
         /**
          * navbar configuration
          */
-        navbar: [
+        nav: [
             {
                 text: 'GoLang相关',
-                children: [
+                items: [
                     {
                         text: 'GoLang基础',
-                        link: '/golang/basic'
+                        link: '/golang/basic/'
                     }
                 ]
 
             },
             {
                 text: 'Java相关',
-                children: [
+                items: [
                     {
                         text: 'Java基础',
-                        link: '/java/basic'
+                        link: '/java/basic/'
                     },
                     {
-                        text: 'Spring',
-                        link: '/java/spring'
+                        text: 'JVM',
+                        link: '/java/jvm/'
+                    },
+                    {
+                        text: 'Spring相关',
+                        link: '/java/spring/'
                     }
                 ]
-
             },
             {
                 text: '前端开发',
-                children: [
+                items: [
                     {
                         text: '前端基础',
-                        link: '/frontend/basic'
+                        link: '/frontend/basic/'
                     },
                     {
                         text: 'Vue',
-                        link: '/frontend/vue'
+                        link: '/frontend/vue/'
                     },
                     {
                         text: 'React',
-                        link: '/frontend/react'
+                        link: '/frontend/react/'
                     }
                 ]
 
             },
             {
                 text: '后端开发',
-                children: [
+                items: [
                     {
                         text: 'Java基础',
-                        link: '/java/basic'
+                        link: '/java/basic/'
                     },
                     {
                         text: 'Spring',
-                        link: '/java/spring'
+                        link: '/java/spring/'
                     }
                 ]
 
@@ -82,24 +90,29 @@ module.exports = {
                 link: '/about/'
             },
         ],
+        sidebar: {
+            '/java/basic/': [
+                {
+                    title: 'Java基础',
+                    children: [
+                        'variable'
+                    ]
+                }
+            ],
+            '/java/spring/': [
+                {
+                    title: 'Spring',
+                    children: [
+                        // 'variable'
+                    ]
+                }
+            ]
+        },
     },
     /**
      * plugin configuration
      */
     plugins: [
-        [
-            '@vuepress/plugin-search',
-            // {
-            //     locales: {
-            //         '/': {
-            //             placeholder: 'Search',
-            //         },
-            //         '/zh/': {
-            //             placeholder: '搜索',
-            //         },
-            //     },
-            // },
-        ]
     ]
     /**
      * theme configuration

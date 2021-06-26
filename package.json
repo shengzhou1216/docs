@@ -6,17 +6,16 @@
   "author": "zhousheng <zhousheng1216@sina.com>",
   "license": "MIT",
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.2.2",
-    "@vuepress/plugin-search": "^1.8.2",
-    "@vuepress/shared-utils": "^1.8.2",
-    "@vuepress/utils": "^2.0.0-alpha.1",
-    "vuepress": "^2.0.0-beta.19"
+    "nodemon": "^2.0.7",
+    "vuepress": "^1.8.2"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "dev": "nodemon --ext md,vue,js --watch .vuepress --watch . --exec vuepress dev docs"
   },
   "dependencies": {
+    "@vuepress/utils": "^2.0.0-alpha.1",
     "flexsearch": "nextapps-de/flexsearch"
   }
 }
