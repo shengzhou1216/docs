@@ -1,19 +1,22 @@
 {
-  "name": "my-site",
-  "version": "0.0.1",
-  "description": "",
+  "name": "site",
+  "version": "1.0.0",
   "main": "index.js",
-  "authors": {
-    "name": "",
-    "email": ""
-  },
-  "repository": "/my-site",
-  "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
-  },
+  "repository": "git@github.com:shengzhou1216/site.git",
+  "author": "zhousheng <zhousheng1216@sina.com>",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.3"
+    "@vue/component-compiler-utils": "^3.2.2",
+    "@vuepress/plugin-search": "^1.8.2",
+    "@vuepress/shared-utils": "^1.8.2",
+    "@vuepress/utils": "^2.0.0-alpha.1",
+    "vuepress": "^2.0.0-beta.19"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "flexsearch": "nextapps-de/flexsearch"
   }
 }
