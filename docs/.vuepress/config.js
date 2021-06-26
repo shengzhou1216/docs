@@ -2,6 +2,10 @@ const { path } = require('@vuepress/utils')
 
 module.exports = {
     /**
+     * github pages configuration
+     */
+    base: '/site/',
+    /**
      * site configuration
      */
     lang: 'en-US',
