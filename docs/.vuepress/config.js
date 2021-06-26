@@ -4,7 +4,7 @@ module.exports = {
     /**
      * github pages configuration
      */
-    base: '/site/',
+    base: '/docs/',
     /**
      * site configuration
      */
