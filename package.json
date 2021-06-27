@@ -6,6 +6,7 @@
   "author": "zhousheng <zhousheng1216@sina.com>",
   "license": "MIT",
   "devDependencies": {
+    "markdown-it-disable-url-encode": "^1.0.1",
     "nodemon": "^2.0.7",
     "vuepress": "^1.8.2"
   },
