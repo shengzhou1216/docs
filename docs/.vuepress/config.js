@@ -11,6 +11,19 @@ module.exports = {
     lang: 'en-US',
     title: 'Hzml Code-Book',
     description: 'Hzml Code-Book',
+    head: [
+        ['script', {
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-175K59GC1N',
+            async: true,
+        }],
+        ['script',{},`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-175K59GC1N');
+        `]
+    ],
     /**
      * theme configuration
      */
