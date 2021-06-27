@@ -11,16 +11,13 @@ module.exports = {
     lang: 'en-US',
     title: 'Hzml Code-Book',
     description: 'Hzml Code-Book',
-    head: [
-        ['link', { rel: 'icon', href: '/logo.png' }]
-    ],
     /**
      * theme configuration
      */
     themeConfig: {
         searchPlaceholder: 'Search...',
         lastUpdated: '最后一次更新于',
-        logo: 'https://vuejs.org/images/logo.png',
+        logo: 'logo.webp',
         searchMaxSuggestions: 10,
         /**
          * navbar configuration
@@ -54,6 +51,19 @@ module.exports = {
                 ]
             },
             {
+                text: 'JavaScript相关',
+                items: [
+                    {
+                        text: 'es6',
+                        link: '/js/es6/'
+                    },
+                    {
+                        text: 'typescript',
+                        link: '/js/typescript/'
+                    },
+                ]
+            },
+            {
                 text: '前端开发',
                 items: [
                     {
@@ -72,22 +82,49 @@ module.exports = {
 
             },
             {
-                text: '后端开发',
+                text: 'Docker',
+                link: '/docker/'
+            },
+            {
+                text: 'Linux',
+                link: '/linux/'
+            },
+            {
+                text: 'Blockchain',
+                link: '/blockchain/'
+            },
+            {
+                text: '密码学',
+                link: '/cryptograph/'
+            },
+            {
+                text: 'CS',
                 items: [
                     {
-                        text: 'Java基础',
-                        link: '/java/basic/'
+                        text: '计算机组成原理',
+                        link: '/cs/computer-architecture/',
                     },
                     {
-                        text: 'Spring',
-                        link: '/java/spring/'
+                        text: '操作系统',
+                        link: '/cs/operating-system/',
+                    },
+                    {
+                        text: '计算机网络',
+                        link: '/cs/computer-network/'
+                    },
+                    {
+                        text: '算法',
+                        link: ''
                     }
                 ]
-
             },
             {
                 text: '关于',
                 link: '/about/'
+            },
+            {
+                text: 'Github',
+                link: 'https://github.com/shengzhou1216/docs'
             },
         ],
         sidebar: {
@@ -113,8 +150,9 @@ module.exports = {
      * plugin configuration
      */
     plugins: [
-    ]
+    ],
     /**
      * theme configuration
      */
+    extraWatchFiles: ["**/*.md", "**/*.vue"],
 }

@@ -12,7 +12,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "dev": "nodemon --ext md,vue,js --watch .vuepress --watch . --exec vuepress dev docs"
+    "dev": "vuepress dev docs --host localhost --open"
   },
   "dependencies": {
     "@vuepress/utils": "^2.0.0-alpha.1",

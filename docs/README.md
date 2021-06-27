@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://vuejs.org/images/logo.png
+heroImage: logo.webp
 heroAlt: Hzml
 heroText: Hzml Code-Book
 tagline: 记录 | 分享
@@ -18,5 +18,5 @@ tagline: 记录 | 分享
 #     details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
 #   - title: Performant
 #     details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-footer: Author@shengzhouzzzzzz1216@gmail.com
+# footer: Author@shengzhouzzzzzz1216@gmail.com
 ---
