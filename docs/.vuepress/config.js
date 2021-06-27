@@ -132,7 +132,10 @@ module.exports = {
                 {
                     title: 'Java基础',
                     children: [
-                        '2.data-type-and-operators'
+                        '2.data-type-and-operators',
+                        '3.programing-control-statement',
+                        '4.classes-objects-methods',
+                        '5.more-datatype-operators',
                     ]
                 }
             ],
