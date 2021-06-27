@@ -153,6 +153,15 @@ module.exports = {
      * plugin configuration
      */
     plugins: [
+        '@vuepress/back-to-top',
+        ['vuepress-plugin-code-copy', true],
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'G-175K59GC1N'
+            }
+        ],
+        '@vuepress/nprogress',
     ],
     /**
     * markdown configuration
@@ -160,6 +169,12 @@ module.exports = {
     markdown: {
         extendMarkdown: md => {
             md.use(require("markdown-it-disable-url-encode"));
+        },
+        anchror: {
+            permalink: true, permalinkBefore: true, permalinkSymbol: '#'
+        },
+        toc: {
+            includeLevel: [2, 3, 4, 5]
         }
     },
     /**

@@ -6,9 +6,14 @@
   "author": "zhousheng <zhousheng1216@sina.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
     "markdown-it-disable-url-encode": "^1.0.1",
     "nodemon": "^2.0.7",
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-code-copy": "^1.0.6"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
