@@ -149,6 +149,7 @@ module.exports = {
                         '3.programing-control-statement',
                         '4.classes-objects-methods',
                         '5.more-datatype-operators',
+                        '7.inheritance'
                     ]
                 }
             ],
