@@ -149,6 +149,7 @@ module.exports = {
                         '3.programing-control-statement',
                         '4.classes-objects-methods',
                         '5.more-datatype-operators',
+			'6.closer-look-at-methods-and-classes',
                         '7.inheritance',
                         '8.packages-interfacec'
                     ]
