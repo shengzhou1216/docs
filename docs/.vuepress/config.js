@@ -28,6 +28,8 @@ module.exports = {
      * theme configuration
      */
     themeConfig: {
+        sidebar: 'auto',
+        // sidebarDepth: 2,
         searchPlaceholder: 'Search...',
         lastUpdated: '最后一次更新于',
         logo: 'logo.webp',
@@ -132,6 +134,18 @@ module.exports = {
                 ]
             },
             {
+                text: '开发工具',
+                items: [
+                    {
+                        text: 'VSCode',
+                        link: '/vscode/',
+                    }
+                ]  
+            },
+            {
+                text: '运维',
+            },
+            {
                 text: '关于',
                 link: '/about/'
             },
@@ -140,31 +154,31 @@ module.exports = {
                 link: 'https://github.com/shengzhou1216/docs'
             },
         ],
-        sidebar: {
-            '/java/basic/': [
-                {
-                    title: 'Java基础',
-                    children: [
-                        '2.data-type-and-operators',
-                        '3.programing-control-statement',
-                        '4.classes-objects-methods',
-                        '5.more-datatype-operators',
-			            '6.closer-look-at-methods-and-classes',
-                        '7.inheritance',
-                        '8.packages-interfacec',
-                        '9.异常处理'
-                    ]
-                }
-            ],
-            '/java/spring/': [
-                {
-                    title: 'Spring',
-                    children: [
-                        // 'variable'
-                    ]
-                }
-            ]
-        },
+        // sidebar: {
+        //     '/java/basic/': [
+        //         {
+        //             title: 'Java基础',
+        //             children: [
+        //                 '2.data-type-and-operators',
+        //                 '3.programing-control-statement',
+        //                 '4.classes-objects-methods',
+        //                 '5.more-datatype-operators',
+		// 	            '6.closer-look-at-methods-and-classes',
+        //                 '7.inheritance',
+        //                 '8.packages-interfacec',
+        //                 '9.异常处理'
+        //             ]
+        //         }
+        //     ],
+        //     '/java/spring/': [
+        //         {
+        //             title: 'Spring',
+        //             children: [
+        //                 // 'variable'
+        //             ]
+        //         }
+        //     ]
+        // },
     },
     /**
      * plugin configuration

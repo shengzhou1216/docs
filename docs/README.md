@@ -2,7 +2,7 @@
 home: true
 heroImage: logo.webp
 heroAlt: Hzml
-heroText: Hzml Code-Book
+# heroText: Hzml Code-Book
 tagline: 记录 | 分享
 # actions:
 #   - text: Get Started
