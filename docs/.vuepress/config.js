@@ -142,9 +142,9 @@ module.exports = {
                     }
                 ]  
             },
-            {
-                text: '运维',
-            },
+            // {
+            //     text: '运维',
+            // },
             {
                 text: '关于',
                 link: '/about/'
