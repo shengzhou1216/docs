@@ -193,6 +193,17 @@ module.exports = {
             }
         ],
         '@vuepress/nprogress',
+        '@vuepress/active-header-links',
+        ['@vssue/vuepress-plugin-vssue', {
+            // set `platform` rather than `api`
+            platform: 'github',
+            // all other options of Vssue are allowed
+            owner: 'shengzhou1216',
+            repo: 'https://github.com/shengzhou1216/docs',
+            clientId: '63e9b536cb1d46e27d9e',
+            clientSecret: '84de9a61b603066af0b742c7d757e47a42ec4f40',
+            }
+        ]
     ],
     /**
     * markdown configuration

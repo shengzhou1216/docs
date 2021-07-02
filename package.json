@@ -6,6 +6,8 @@
   "author": "zhousheng <zhousheng1216@sina.com>",
   "license": "MIT",
   "devDependencies": {
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",
+    "@vuepress/plugin-active-header-links": "^1.8.2",
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-blog": "^1.9.4",
     "@vuepress/plugin-google-analytics": "^1.8.2",
