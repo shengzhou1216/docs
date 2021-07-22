@@ -86,6 +86,10 @@ module.exports = {
                         link: '/frontend/basic/'
                     },
                     {
+                        text: '浏览器',
+                        link: '/frontend/browser/'
+                    },
+                    {
                         text: 'Vue',
                         link: '/frontend/vue/'
                     },
