@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>其他运算符、运算顺序 | Hzml Code-Book</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-175K59GC1N" async="true"></script>
+    <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-175K59GC1N');
+        </script>
+    <meta name="description" content="Hzml Code-Book">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.eb47bffd.css" as="style"><link rel="preload" href="/docs/assets/js/app.01c93764.js" as="script"><link rel="preload" href="/docs/assets/js/2.2d8514e9.js" as="script"><link rel="preload" href="/docs/assets/js/66.03ae7250.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.c7c6a8e3.js"><link rel="prefetch" href="/docs/assets/js/11.c9661a93.js"><link rel="prefetch" href="/docs/assets/js/12.1279196e.js"><link rel="prefetch" href="/docs/assets/js/13.11f069e8.js"><link rel="prefetch" href="/docs/assets/js/14.0d56bfa0.js"><link rel="prefetch" href="/docs/assets/js/15.9c25e017.js"><link rel="prefetch" href="/docs/assets/js/16.b63ae8c6.js"><link rel="prefetch" href="/docs/assets/js/17.3317484b.js"><link rel="prefetch" href="/docs/assets/js/18.fb44ae63.js"><link rel="prefetch" href="/docs/assets/js/19.1a384a56.js"><link rel="prefetch" href="/docs/assets/js/20.c3fd2403.js"><link rel="prefetch" href="/docs/assets/js/21.0f8d82c2.js"><link rel="prefetch" href="/docs/assets/js/22.997f814b.js"><link rel="prefetch" href="/docs/assets/js/23.e99fc4fb.js"><link rel="prefetch" href="/docs/assets/js/24.a5ea8694.js"><link rel="prefetch" href="/docs/assets/js/25.ae0fe913.js"><link rel="prefetch" href="/docs/assets/js/26.b41fd34b.js"><link rel="prefetch" href="/docs/assets/js/27.4170579d.js"><link rel="prefetch" href="/docs/assets/js/28.dc7c028a.js"><link rel="prefetch" href="/docs/assets/js/29.d5feefd1.js"><link rel="prefetch" href="/docs/assets/js/3.753f60e9.js"><link rel="prefetch" href="/docs/assets/js/30.e4c0c578.js"><link rel="prefetch" href="/docs/assets/js/31.8bda91a8.js"><link rel="prefetch" href="/docs/assets/js/32.fe9e4af2.js"><link rel="prefetch" href="/docs/assets/js/33.09d9b618.js"><link rel="prefetch" href="/docs/assets/js/34.09710b5d.js"><link rel="prefetch" href="/docs/assets/js/35.69f8dd63.js"><link rel="prefetch" href="/docs/assets/js/36.aca157ec.js"><link rel="prefetch" href="/docs/assets/js/37.e5d95f02.js"><link rel="prefetch" href="/docs/assets/js/38.555a01b0.js"><link rel="prefetch" href="/docs/assets/js/39.2319303e.js"><link rel="prefetch" href="/docs/assets/js/4.f1b90a9c.js"><link rel="prefetch" href="/docs/assets/js/40.85dca416.js"><link rel="prefetch" href="/docs/assets/js/41.61fd7ba1.js"><link rel="prefetch" href="/docs/assets/js/42.4af52951.js"><link rel="prefetch" href="/docs/assets/js/43.9aac0ca7.js"><link rel="prefetch" href="/docs/assets/js/44.9b8ef825.js"><link rel="prefetch" href="/docs/assets/js/45.22cab614.js"><link rel="prefetch" href="/docs/assets/js/46.08dbd14c.js"><link rel="prefetch" href="/docs/assets/js/47.48699451.js"><link rel="prefetch" href="/docs/assets/js/48.feea7b15.js"><link rel="prefetch" href="/docs/assets/js/49.d1ec5f48.js"><link rel="prefetch" href="/docs/assets/js/5.bb2e5f53.js"><link rel="prefetch" href="/docs/assets/js/50.c21b0937.js"><link rel="prefetch" href="/docs/assets/js/51.0141d889.js"><link rel="prefetch" href="/docs/assets/js/52.e568693e.js"><link rel="prefetch" href="/docs/assets/js/53.53560722.js"><link rel="prefetch" href="/docs/assets/js/54.4288714a.js"><link rel="prefetch" href="/docs/assets/js/55.0b53a78d.js"><link rel="prefetch" href="/docs/assets/js/56.7d19e1b0.js"><link rel="prefetch" href="/docs/assets/js/57.7fdd16ce.js"><link rel="prefetch" href="/docs/assets/js/58.edaac107.js"><link rel="prefetch" href="/docs/assets/js/59.47e1e5cb.js"><link rel="prefetch" href="/docs/assets/js/6.7551a3ec.js"><link rel="prefetch" href="/docs/assets/js/60.74ea52f6.js"><link rel="prefetch" href="/docs/assets/js/61.df7f149d.js"><link rel="prefetch" href="/docs/assets/js/62.4772ede3.js"><link rel="prefetch" href="/docs/assets/js/63.9718cdf7.js"><link rel="prefetch" href="/docs/assets/js/64.4d5b14c0.js"><link rel="prefetch" href="/docs/assets/js/65.5282e75c.js"><link rel="prefetch" href="/docs/assets/js/67.bd2b90aa.js"><link rel="prefetch" href="/docs/assets/js/68.72a19020.js"><link rel="prefetch" href="/docs/assets/js/69.70040cf3.js"><link rel="prefetch" href="/docs/assets/js/7.1806fdef.js"><link rel="prefetch" href="/docs/assets/js/70.1e42849e.js"><link rel="prefetch" href="/docs/assets/js/71.e8ee8410.js"><link rel="prefetch" href="/docs/assets/js/72.32f433ac.js"><link rel="prefetch" href="/docs/assets/js/73.4ec9d601.js"><link rel="prefetch" href="/docs/assets/js/74.38324d55.js"><link rel="prefetch" href="/docs/assets/js/75.15903373.js"><link rel="prefetch" href="/docs/assets/js/76.b6697f6e.js"><link rel="prefetch" href="/docs/assets/js/77.c4aa7c7b.js"><link rel="prefetch" href="/docs/assets/js/78.841456b3.js"><link rel="prefetch" href="/docs/assets/js/79.791f25d3.js"><link rel="prefetch" href="/docs/assets/js/8.22845c8b.js"><link rel="prefetch" href="/docs/assets/js/80.ce938d83.js"><link rel="prefetch" href="/docs/assets/js/81.b10aa5d1.js"><link rel="prefetch" href="/docs/assets/js/82.ec26ddfd.js"><link rel="prefetch" href="/docs/assets/js/83.042ed5eb.js"><link rel="prefetch" href="/docs/assets/js/84.074c359f.js"><link rel="prefetch" href="/docs/assets/js/85.9cfca185.js"><link rel="prefetch" href="/docs/assets/js/86.e9cf185b.js"><link rel="prefetch" href="/docs/assets/js/87.40c63c75.js"><link rel="prefetch" href="/docs/assets/js/88.431ecc87.js"><link rel="prefetch" href="/docs/assets/js/89.4010e2df.js"><link rel="prefetch" href="/docs/assets/js/9.c2a53714.js"><link rel="prefetch" href="/docs/assets/js/90.483bdbb7.js"><link rel="prefetch" href="/docs/assets/js/91.9dfaad08.js"><link rel="prefetch" href="/docs/assets/js/92.21001a7d.js"><link rel="prefetch" href="/docs/assets/js/93.f14a89f0.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.eb47bffd.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="logo.webp" alt="Hzml Code-Book" class="logo"> <span class="site-name can-hide">Hzml Code-Book</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GoLang相关" class="dropdown-title"><span class="title">GoLang相关</span> <span class="arrow down"></span></button> <button type="button" aria-label="GoLang相关" class="mobile-dropdown-title"><span class="title">GoLang相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/golang/basic/" class="nav-link">
+  GoLang基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java相关" class="dropdown-title"><span class="title">Java相关</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java相关" class="mobile-dropdown-title"><span class="title">Java相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/java/basic/" class="nav-link">
+  Java基础
+</a></li><li class="dropdown-item"><!----> <a href="/docs/java/jvm/" class="nav-link">
+  JVM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/java/spring/" class="nav-link">
+  Spring相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript相关" class="dropdown-title"><span class="title">JavaScript相关</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript相关" class="mobile-dropdown-title"><span class="title">JavaScript相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/js/入门/" class="nav-link">
+  入门
+</a></li><li class="dropdown-item"><!----> <a href="/docs/js/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/docs/js/typescript/" class="nav-link">
+  typescript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端开发" class="dropdown-title"><span class="title">前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端开发" class="mobile-dropdown-title"><span class="title">前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/frontend/basic/" class="nav-link">
+  前端基础
+</a></li><li class="dropdown-item"><!----> <a href="/docs/frontend/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/docs/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/frontend/react/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/docs/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/docs/blockchain/" class="nav-link">
+  Blockchain
+</a></div><div class="nav-item"><a href="/docs/cryptograph/" class="nav-link">
+  密码学
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CS" class="dropdown-title"><span class="title">CS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CS" class="mobile-dropdown-title"><span class="title">CS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/cs/computer-architecture/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/docs/cs/operating-system/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/docs/cs/computer-network/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/.html" class="nav-link">
+  算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/vscode/" class="nav-link">
+  VSCode
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/shengzhou1216/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="GoLang相关" class="dropdown-title"><span class="title">GoLang相关</span> <span class="arrow down"></span></button> <button type="button" aria-label="GoLang相关" class="mobile-dropdown-title"><span class="title">GoLang相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/golang/basic/" class="nav-link">
+  GoLang基础
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java相关" class="dropdown-title"><span class="title">Java相关</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java相关" class="mobile-dropdown-title"><span class="title">Java相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/java/basic/" class="nav-link">
+  Java基础
+</a></li><li class="dropdown-item"><!----> <a href="/docs/java/jvm/" class="nav-link">
+  JVM
+</a></li><li class="dropdown-item"><!----> <a href="/docs/java/spring/" class="nav-link">
+  Spring相关
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript相关" class="dropdown-title"><span class="title">JavaScript相关</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript相关" class="mobile-dropdown-title"><span class="title">JavaScript相关</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/js/入门/" class="nav-link">
+  入门
+</a></li><li class="dropdown-item"><!----> <a href="/docs/js/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/docs/js/typescript/" class="nav-link">
+  typescript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端开发" class="dropdown-title"><span class="title">前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端开发" class="mobile-dropdown-title"><span class="title">前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/frontend/basic/" class="nav-link">
+  前端基础
+</a></li><li class="dropdown-item"><!----> <a href="/docs/frontend/browser/" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/docs/frontend/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/docs/frontend/react/" class="nav-link">
+  React
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/docker/" class="nav-link">
+  Docker
+</a></div><div class="nav-item"><a href="/docs/linux/" class="nav-link">
+  Linux
+</a></div><div class="nav-item"><a href="/docs/blockchain/" class="nav-link">
+  Blockchain
+</a></div><div class="nav-item"><a href="/docs/cryptograph/" class="nav-link">
+  密码学
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CS" class="dropdown-title"><span class="title">CS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CS" class="mobile-dropdown-title"><span class="title">CS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/cs/computer-architecture/" class="nav-link">
+  计算机组成原理
+</a></li><li class="dropdown-item"><!----> <a href="/docs/cs/operating-system/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/docs/cs/computer-network/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/.html" class="nav-link">
+  算法
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/vscode/" class="nav-link">
+  VSCode
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="https://github.com/shengzhou1216/docs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>其他运算符、运算顺序</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/5.%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E9%A1%BA%E5%BA%8F.html#void-运算符" class="sidebar-link">void 运算符</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/5.%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E9%A1%BA%E5%BA%8F.html#逗号运算符" class="sidebar-link">逗号运算符</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/5.%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E9%A1%BA%E5%BA%8F.html#运算顺序" class="sidebar-link">运算顺序</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/5.%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E9%A1%BA%E5%BA%8F.html#优先级" class="sidebar-link">优先级</a></li><li class="sidebar-sub-header"><a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/5.%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E9%A1%BA%E5%BA%8F.html#圆括号的作用" class="sidebar-link">圆括号的作用</a></li><li class="sidebar-sub-header"><a href="/docs/js/%E5%85%A5%E9%97%A8/3.%E8%BF%90%E7%AE%97%E7%AC%A6/5.%E5%85%B6%E4%BB%96%E8%BF%90%E7%AE%97%E7%AC%A6%E3%80%81%E8%BF%90%E7%AE%97%E9%A1%BA%E5%BA%8F.html#左结合与右结合" class="sidebar-link">左结合与右结合</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="其他运算符、运算顺序"><a href="#其他运算符、运算顺序" class="header-anchor">#</a> 其他运算符、运算顺序</h1> <h2 id="void-运算符"><a href="#void-运算符" class="header-anchor">#</a> void 运算符</h2> <p><strong><code>void</code>运算符的作用是执行一个表达式，然后不返回任何值，或者说返回<code>undefined</code>。</strong></p> <div class="language- extra-class"><pre class="language-text"><code>void 0 // undefined
+void(0) // undefined
+</code></pre></div><p>上面是<code>void</code>运算符的两种写法，都正确。建议采用后一种形式，即总是使用圆括号。因为<code>void</code>运算符的优先性很高，如果不使用括号，容易造成错误的结果。比如，<code>void 4 + 7</code>实际上等同于<code>(void 4) + 7</code>。</p> <p>下面是<code>void</code>运算符的一个例子。</p> <div class="language- extra-class"><pre class="language-text"><code>var x = 3;
+void (x = 5) //undefined
+x // 5
+</code></pre></div><p>这个运算符的主要用途是浏览器的书签工具（Bookmarklet），以及在超级链接中插入代码防止网页跳转。</p> <p>请看下面的代码。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;script&gt;
+function f() {
+  console.log('Hello World');
+}
+&lt;/script&gt;
+&lt;a href=&quot;http://example.com&quot; onclick=&quot;f(); return false;&quot;&gt;点击&lt;/a&gt;
+</code></pre></div><p>上面代码中，点击链接后，会先执行<code>onclick</code>的代码，由于<code>onclick</code>返回<code>false</code>，所以浏览器不会跳转到 example.com。</p> <p><code>void</code>运算符可以取代上面的写法。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a href=&quot;javascript: void(f())&quot;&gt;文字&lt;/a&gt;
+</code></pre></div><p>下面是一个更实际的例子，用户点击链接提交表单，但是不产生页面跳转。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;a href=&quot;javascript: void(document.form.submit())&quot;&gt;
+  提交
+&lt;/a&gt;
+</code></pre></div><h2 id="逗号运算符"><a href="#逗号运算符" class="header-anchor">#</a> 逗号运算符</h2> <p>逗号运算符用于对两个表达式求值，并返回后一个表达式的值。</p> <div class="language- extra-class"><pre class="language-text"><code>'a', 'b' // &quot;b&quot;
+
+var x = 0;
+var y = (x++, 10);
+x // 1
+y // 10
+</code></pre></div><p>上面代码中，逗号运算符返回后一个表达式的值。</p> <p>逗号运算符的一个用途是，在返回一个值之前，进行一些辅助操作。</p> <div class="language- extra-class"><pre class="language-text"><code>var value = (console.log('Hi!'), true);
+// Hi!
+
+value // true
+</code></pre></div><p>上面代码中，先执行逗号之前的操作，然后返回逗号后面的值。</p> <h2 id="运算顺序"><a href="#运算顺序" class="header-anchor">#</a> 运算顺序</h2> <h3 id="优先级"><a href="#优先级" class="header-anchor">#</a> 优先级</h3> <p>JavaScript 各种运算符的优先级别（Operator Precedence）是不一样的。优先级高的运算符先执行，优先级低的运算符后执行。</p> <div class="language- extra-class"><pre class="language-text"><code>4 + 5 * 6 // 34
+</code></pre></div><p>上面的代码中，乘法运算符（<code>*</code>）的优先性高于加法运算符（<code>+</code>），所以先执行乘法，再执行加法，相当于下面这样。</p> <div class="language- extra-class"><pre class="language-text"><code>4 + (5 * 6) // 34
+</code></pre></div><p>如果多个运算符混写在一起，常常会导致令人困惑的代码。</p> <div class="language- extra-class"><pre class="language-text"><code>var x = 1;
+var arr = [];
+
+var y = arr.length &lt;= 0 || arr[0] === undefined ? x : arr[0];
+</code></pre></div><p>上面代码中，变量<code>y</code>的值就很难看出来，因为这个表达式涉及5个运算符，到底谁的优先级最高，实在不容易记住。</p> <p>根据语言规格，这五个运算符的优先级从高到低依次为：小于等于（<code>&lt;=</code>)、严格相等（<code>===</code>）、或（<code>||</code>）、三元（<code>?:</code>）、等号（<code>=</code>）。因此上面的表达式，实际的运算顺序如下。</p> <div class="language- extra-class"><pre class="language-text"><code>var y = ((arr.length &lt;= 0) || (arr[0] === undefined)) ? x : arr[0];
+</code></pre></div><p>记住所有运算符的优先级，是非常难的，也是没有必要的。</p> <h3 id="圆括号的作用"><a href="#圆括号的作用" class="header-anchor">#</a> 圆括号的作用</h3> <p>圆括号（<code>()</code>）可以用来提高运算的优先级，因为它的优先级是最高的，即圆括号中的表达式会第一个运算。</p> <div class="language- extra-class"><pre class="language-text"><code>(4 + 5) * 6 // 54
+</code></pre></div><p>上面代码中，由于使用了圆括号，加法会先于乘法执行。</p> <p>运算符的优先级别十分繁杂，且都是硬性规定，因此建议总是使用圆括号，保证运算顺序清晰可读，这对代码的维护和除错至关重要。</p> <p>顺便说一下，圆括号不是运算符，而是一种语法结构。它一共有两种用法：一种是把表达式放在圆括号之中，提升运算的优先级；另一种是跟在函数的后面，作用是调用函数。</p> <p>注意，因为圆括号不是运算符，所以不具有求值作用，只改变运算的优先级。</p> <div class="language- extra-class"><pre class="language-text"><code>var x = 1;
+(x) = 2;
+</code></pre></div><p>上面代码的第二行，如果圆括号具有求值作用，那么就会变成<code>1 = 2</code>，这是会报错了。但是，上面的代码可以运行，这验证了圆括号只改变优先级，不会求值。</p> <p>这也意味着，如果整个表达式都放在圆括号之中，那么不会有任何效果。</p> <div class="language- extra-class"><pre class="language-text"><code>(expression)
+// 等同于
+expression
+</code></pre></div><p>函数放在圆括号中，会返回函数本身。如果圆括号紧跟在函数的后面，就表示调用函数。</p> <div class="language- extra-class"><pre class="language-text"><code>function f() {
+  return 1;
+}
+
+(f) // function f(){return 1;}
+f() // 1
+</code></pre></div><p>上面代码中，函数放在圆括号之中会返回函数本身，圆括号跟在函数后面则是调用函数。</p> <p>圆括号之中，只能放置表达式，如果将语句放在圆括号之中，就会报错。</p> <div class="language- extra-class"><pre class="language-text"><code>(var a = 1)
+// SyntaxError: Unexpected token var
+</code></pre></div><h3 id="左结合与右结合"><a href="#左结合与右结合" class="header-anchor">#</a> 左结合与右结合</h3> <p>对于优先级别相同的运算符，同时出现的时候，就会有计算顺序的问题。</p> <div class="language- extra-class"><pre class="language-text"><code>a OP b OP c
+</code></pre></div><p>上面代码中，<code>OP</code>表示运算符。它可以有两种解释方式。</p> <div class="language- extra-class"><pre class="language-text"><code>// 方式一
+(a OP b) OP c
+
+// 方式二
+a OP (b OP c)
+</code></pre></div><p>上面的两种方式，得到的计算结果往往是不一样的。方式一是将左侧两个运算数结合在一起，采用这种解释方式的运算符，称为“左结合”（left-to-right associativity）运算符；方式二是将右侧两个运算数结合在一起，这样的运算符称为“右结合”运算符（right-to-left associativity）。</p> <p>JavaScript 语言的大多数运算符是“左结合”，请看下面加法运算符的例子。</p> <div class="language- extra-class"><pre class="language-text"><code>x + y + z
+
+// 引擎解释如下
+(x + y) + z
+</code></pre></div><p>上面代码中，<code>x</code>与<code>y</code>结合在一起，它们的预算结果再与<code>z</code>进行运算。</p> <p>少数运算符是“右结合”，其中最主要的是赋值运算符（<code>=</code>）和三元条件运算符（<code>?:</code>）。</p> <div class="language- extra-class"><pre class="language-text"><code>w = x = y = z;
+q = a ? b : c ? d : e ? f : g;
+</code></pre></div><p>上面代码的解释方式如下。</p> <div class="language- extra-class"><pre class="language-text"><code>w = (x = (y = z));
+q = a ? b : (c ? d : (e ? f : g));
+</code></pre></div><p>上面的两行代码，都是右侧的运算数结合在一起。</p> <p>另外，指数运算符（<code>**</code>）也是右结合。</p> <div class="language- extra-class"><pre class="language-text"><code>2 ** 3 ** 2
+// 相当于 2 ** (3 ** 2)
+// 512
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后一次更新于:</span> <span class="time">7/29/2021, 4:01:39 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/docs/assets/js/app.01c93764.js" defer></script><script src="/docs/assets/js/2.2d8514e9.js" defer></script><script src="/docs/assets/js/66.03ae7250.js" defer></script>
+  </body>
+</html>
