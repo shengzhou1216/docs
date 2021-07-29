@@ -69,6 +69,10 @@ module.exports = {
                 text: 'JavaScript相关',
                 items: [
                     {
+                        text: '入门',
+                        link: '/js/入门/'
+                    },
+                    {
                         text: 'es6',
                         link: '/js/es6/'
                     },
